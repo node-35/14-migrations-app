@@ -14,6 +14,9 @@ app.use(cors());
 
 // rutas
 app.use('/api/v1', router);
+app.get("/", (req, res) => {
+    return res.send("Welcome to express!")
+})
 
 // middlewares después de las rutas
 app.use(errorHandler)
