@@ -4,3 +4,5 @@ const catchError = controller => {
             .catch(next);
     }
 }
+
+module.exports = catchError
